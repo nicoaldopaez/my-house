@@ -23,7 +23,10 @@ public class Picture
     {
         // nothing to do... instance variables are automatically set to null
     }
-
+    public void atardecer()
+    {
+        sun.slowMoveVertical(120);
+    }
     /**
      * Draw this picture.
      */
