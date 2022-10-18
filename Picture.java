@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square suelo;
+    private Person deian;
     /**
      * Constructor for objects of class Picture
      */
@@ -26,6 +27,11 @@ public class Picture
     public void atardecer()
     {
         sun.slowMoveVertical(120);
+        deian = new Person();
+        deian.moveHorizontal(-190);
+        deian.makeVisible();
+        deian.slowMoveHorizontal(200);
+        
     }
     /**
      * Draw this picture.
